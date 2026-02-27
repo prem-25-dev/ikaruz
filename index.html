@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikaruz | AI & Software Company</title>
+    <meta name="description" content="Ikaruz builds scalable AI systems, enterprise software, and high-performance web applications.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="assets/logo/main.png" alt="Ikaruz Logo">
+                    <span class="logo-name">IKARUZ</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/team.html">Our Crew</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html" class="cta-btn">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <canvas id="hero-canvas"></canvas>
+            <div class="scan-lines"></div>
+
+            <div class="hero-content">
+
+                <h1 class="hero-title">
+                    <span class="hero-line" style="--d:0">Welcome to</span>
+                    <span class="hero-line hero-line-accent" style="--d:1">IKARUZ</span>
+                </h1>
+
+                <p class="hero-sub">
+                    We build scalable AI systems, enterprise-grade software,
+                    and high-performance web applications for modern businesses,
+                    which are highly flexible and customizable.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="/services.html" class="btn-primary">
+                        Explore Services <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="/contact.html" class="btn-ghost">Get in Touch</a>
+                </div>
+
+                <div class="scroll-hint">
+                    <div class="scroll-line"></div>
+                    <span>scroll</span>
+                </div>
+
+            </div>
+
+            <!-- corner tags -->
+            <div class="hero-tag hero-tag-tl"><span>EST. 2024</span></div>
+            <div class="hero-tag hero-tag-tr"><span>v2.0</span></div>
+            <div class="hero-tag hero-tag-br"><span>IND — GLOBAL</span></div>
+
+        </section>
+
+        <!-- ══════════════════════════════
+             MARQUEE STRIP
+        ══════════════════════════════ -->
+        <div class="marquee-strip">
+            <div class="marquee-track">
+                <span>AI Agents</span><span class="mdot">✦</span>
+                <span>SaaS Platforms</span><span class="mdot">✦</span>
+                <span>Web Applications</span><span class="mdot">✦</span>
+                <span>Business Automation</span><span class="mdot">✦</span>
+                <span>Chatbots</span><span class="mdot">✦</span>
+                <span>Biometric Systems</span><span class="mdot">✦</span>
+                <span>E-Commerce</span><span class="mdot">✦</span>
+                <span>CRM Tools</span><span class="mdot">✦</span>
+                <span>AI Agents</span><span class="mdot">✦</span>
+                <span>SaaS Platforms</span><span class="mdot">✦</span>
+                <span>Web Applications</span><span class="mdot">✦</span>
+                <span>Business Automation</span><span class="mdot">✦</span>
+                <span>Chatbots</span><span class="mdot">✦</span>
+                <span>Biometric Systems</span><span class="mdot">✦</span>
+                <span>E-Commerce</span><span class="mdot">✦</span>
+                <span>CRM Tools</span><span class="mdot">✦</span>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════
+             STATS (commented out for now)
+        ══════════════════════════════ -->
+        <!--
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-top">
+                        <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+                    </div>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-top">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    </div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-top">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-plus"></span>
+                    </div>
+                    <p>Core Services</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-top">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                    </div>
+                    <p>Flexible Pricing</p>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- ══════════════════════════════
+             SERVICES — full width horizontal cards
+        ══════════════════════════════ -->
+        <section class="services">
+            <div class="section-header">
+                <p class="eyebrow">// what we build</p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-sub">Precision-engineered software for ambitious businesses.</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- AI & Automation -->
+                <div class="card card-ai">
+                    <div class="card-visual">
+                        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80" alt="AI Automation" loading="lazy">
+                    </div>
+                    <div class="card-overlay"></div>
+                    <div class="card-tint"></div>
+                    <div class="card-icon-wrap"><i class="fa-solid fa-robot"></i></div>
+                    <div class="card-body">
+                        <p class="card-label">01 — Intelligence</p>
+                        <h3 class="card-title">AI & Automation</h3>
+                        <div class="card-tags">
+                            <span class="tag">Custom AI Agents</span>
+                            <span class="tag">Chatbots</span>
+                            <span class="tag">CRM Tools</span>
+                            <span class="tag">Web Scraping</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <a href="/services.html#ai" class="card-cta">
+                            Explore Solutions <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SaaS Development -->
+                <div class="card card-saas">
+                    <div class="card-visual">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&q=80" alt="SaaS Development" loading="lazy">
+                    </div>
+                    <div class="card-overlay"></div>
+                    <div class="card-tint"></div>
+                    <div class="card-icon-wrap"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="card-body">
+                        <p class="card-label">02 — Platform</p>
+                        <h3 class="card-title">SaaS Development</h3>
+                        <div class="card-tags">
+                            <span class="tag">Billing Systems</span>
+                            <span class="tag">Inventory Management</span>
+                            <span class="tag">Biometrics</span>
+                            <span class="tag">Queuing Systems</span>
+                            <span class="tag">Institutions</span>
+                        </div>
+                        <a href="/services.html#saas" class="card-cta">
+                            Explore Solutions <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Web Design -->
+                <div class="card card-web">
+                    <div class="card-visual">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&q=80" alt="Web Design" loading="lazy">
+                    </div>
+                    <div class="card-overlay"></div>
+                    <div class="card-tint"></div>
+                    <div class="card-icon-wrap"><i class="fa-solid fa-code"></i></div>
+                    <div class="card-body">
+                        <p class="card-label">03 — Digital</p>
+                        <h3 class="card-title">Web Design & Development</h3>
+                        <div class="card-tags">
+                            <span class="tag">E-Commerce</span>
+                            <span class="tag">Portfolios</span>
+                            <span class="tag">Booking Systems</span>
+                            <span class="tag">Web Apps</span>
+                        </div>
+                        <a href="/services.html#web" class="card-cta">
+                            Explore Solutions <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════
+             WHY CHOOSE US
+        ══════════════════════════════ -->
+        <section class="why">
+            <div class="why-inner">
+
+                <div class="why-left">
+                    <p class="eyebrow">// why us</p>
+                    <h2>Built Different.<br>By Design.</h2>
+                    <p class="why-desc">
+                        We are not a typical agency. We are a team of passionate
+                        developers who care more about your results than your invoice.
+                    </p>
+                    <a href="/team.html" class="btn-ghost">
+                        Meet the Crew <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="why-right">
+                    <div class="why-item">
+                        <div class="why-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div>
+                            <h4>AI-Driven Architecture</h4>
+                            <p>Every system is designed to leverage modern AI from the ground up.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h4>Scalable & Secure</h4>
+                            <p>Built to grow with you — no rewriting from scratch when you scale.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                        <div>
+                            <h4>Flexible Pricing</h4>
+                            <p>Prices that work for startups and enterprises alike. No hidden fees.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon"><i class="fa-solid fa-earth-asia"></i></div>
+                        <div>
+                            <h4>Support in Your Language</h4>
+                            <p>Customer care in multiple languages. We meet you where you are.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div>
+                            <h4>Future-Ready Technology</h4>
+                            <p>We build with tomorrow's stack today — so you are never left behind.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <div>
+                            <h4>Goal to Deliver, Not Earn</h4>
+                            <p>We focus on results first. The revenue takes care of itself.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════
+             VISION
+        ══════════════════════════════ -->
+        <section class="vision">
+            <div class="vision-inner">
+                <div class="vision-glow"></div>
+                <p class="eyebrow">// our mission</p>
+                <blockquote class="vision-quote">
+                    "Technology to every<br>corner of the world."
+                </blockquote>
+                <p class="vision-body">
+                    Ikaruz aims to build intelligent digital infrastructure for businesses
+                    and emerging markets, driving innovation through AI, SaaS, and scalable
+                    technology solutions. We seek problems worth solving and deliver solutions
+                    that work — at prices that don't break the bank.
+                </p>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════
+             TESTIMONIALS
+        ══════════════════════════════ -->
+        <section class="testimonials">
+            <div class="section-header">
+                <p class="eyebrow">// client feedback</p>
+                <h2 class="section-title">What They Say</h2>
+            </div>
+
+            <div class="testimonials-grid">
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p>"The billing software Ikaruz built for our wholesale Aavin dealership is excellent — completely bug-free. It automated our billing into Excel, saves us a lot of time every day, and all our data is stored properly. Very satisfied."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">A</div>
+                        <div>
+                            <h5>MRS Sai Agency</h5>
+                            <span>Billing Software Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card testi-featured">
+                    <div class="testi-stars">★★★★★</div>
+                    <p>"Ikaruz built us a SaaS application that consolidates four of our Excel sheets into one unified platform. What used to take hours of manual work now runs automatically. It has transformed how our team operates."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">E</div>
+                        <div>
+                            <h5>Shree Balaji Enterprise (sbgrps.com)</h5>
+                            <span>Excel Automation SaaS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★</div>
+                    <p>"Our new website gets significantly more enquiries than before. Ikaruz understood exactly what we needed and delivered a clean, fast, and professional result. Highly recommended."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">K</div>
+                        <div>
+                            <h5>EA SPortwear</h5>
+                            <span>Business Website Client</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════
+             CTA
+        ══════════════════════════════ -->
+        <section class="home-cta">
+            <div class="home-cta-inner">
+                <h2>Ready to Build Something Powerful?</h2>
+                <p>Let's turn your vision into reality with affordable and innovative solutions.</p>
+                <a href="/contact.html" class="btn-primary">
+                    Start Your Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ══════════════════════════════
+         FOOTER + MINI GAME
+    ══════════════════════════════ -->
+    <footer>
+
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-brand-logo">
+                    <img src="assets/logo/main.png" alt="Ikaruz" class="footer-logo">
+                    <span class="logo-name">IKARUZ</span>
+                </div>
+                <p>Building intelligent software for ambitious businesses worldwide.</p>
+            </div>
+            <div class="footer-links-group">
+                <h5>Company</h5>
+                <a href="/">Home</a>
+                <a href="/services.html">Services</a>
+                <a href="/team.html">Our Crew</a>
+                <a href="/projects.html">Projects</a>
+            </div>
+            <div class="footer-links-group">
+                <h5>Services</h5>
+                <a href="/services.html#ai">AI & Automation</a>
+                <a href="/services.html#saas">SaaS Development</a>
+                <a href="/services.html#web">Web Design</a>
+            </div>
+            <div class="footer-links-group">
+                <h5>Contact</h5>
+                <a href="/contact.html">Get a Quote</a>
+                <a href="mailto:hello@ikaruz.in">hello@ikaruz.in</a>
+            </div>
+        </div>
+
+        <!-- FOOTER FUN — Catch the Bug Game -->
+        <div class="footer-fun">
+            <div class="footer-fun-header">
+                <p class="eyebrow">// footer fun</p>
+                <h3>Catch the Bug! 🐛</h3>
+                <p class="footer-fun-sub">Click the bug as many times as you can in 15 seconds!</p>
+            </div>
+
+            <div class="game-area" id="gameArea">
+                <div class="game-hud">
+                    <span>Score: <strong id="gameScore">0</strong></span>
+                    <span>Best: <strong id="gameBest">0</strong></span>
+                    <span>Time: <strong id="gameTimer">15</strong>s</span>
+                </div>
+                <div class="game-bug" id="gameBug">🐛</div>
+                <div class="game-overlay" id="gameOverlay">
+                    <h4 id="gameOverlayTitle">Ready?</h4>
+                    <p id="gameOverlayMsg">Click the bug as fast as you can!</p>
+                    <button class="game-start-btn" id="gameStartBtn">▶ Start</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Ikaruz. All rights reserved.</p>
+            <p class="footer-stack">AI • SaaS • Enterprise Software • Automation</p>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="cursor.js"></script>
+    <script src="home.js"></script>
+
+</body>
+</html>
+
+

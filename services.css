@@ -1,0 +1,593 @@
+/* ─────────────────────────────────────
+   SERVICES PAGE — services.css
+   Import this only in services.html
+───────────────────────────────────── */
+
+
+/* ─────────────────────────────────────
+   PAGE HERO
+───────────────────────────────────── */
+
+.page-hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 140px 10% 80px;
+    background: #0a0a0a;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+/* subtle grid lines */
+.page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(37,99,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+}
+
+/* blue glow blob */
+.page-hero::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 300px;
+    background: radial-gradient(ellipse, rgba(37,99,255,0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.page-hero-content h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+    margin: 12px 0 20px;
+    background: linear-gradient(135deg, #fff 40%, #4d8aff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-hero-sub {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #888ea8;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+
+/* ─────────────────────────────────────
+   SERVICE DETAIL SECTIONS
+───────────────────────────────────── */
+
+.service-detail {
+    padding: 100px 8%;
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.service-detail-alt {
+    background: #0f0f0f;
+}
+
+.service-detail-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* reversed layout for alt sections */
+.service-detail-inner-rev {
+    direction: rtl;
+}
+
+.service-detail-inner-rev > * {
+    direction: ltr;
+}
+
+.service-detail-text h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 10px 0 20px;
+    color: white;
+}
+
+.service-desc {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #888ea8;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 36px;
+}
+
+
+/* ─────────────────────────────────────
+   FEATURE LIST
+───────────────────────────────────── */
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 20px;
+    background: #161616;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.feature-item:hover {
+    border-color: rgba(37,99,255,0.4);
+    transform: translateX(4px);
+}
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background: #1a2a5e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4d8aff;
+    font-size: 16px;
+}
+
+.feature-item h4 {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.feature-item p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    color: #888ea8;
+    line-height: 1.5;
+}
+
+
+/* ─────────────────────────────────────
+   SERVICE VISUAL IMAGE
+───────────────────────────────────── */
+
+.service-detail-visual {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.07);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    aspect-ratio: 4/3;
+}
+
+.service-detail-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.7) brightness(0.8);
+    transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+.service-detail-visual:hover img {
+    transform: scale(1.04);
+    filter: saturate(0.9) brightness(0.9);
+}
+
+
+/* ─────────────────────────────────────
+   PROCESS / HOW WE WORK
+───────────────────────────────────── */
+
+.process {
+    padding: 100px 8%;
+    background: #0f0f0f;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.process-steps {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    flex: 1;
+    min-width: 180px;
+    max-width: 220px;
+    text-align: center;
+    padding: 30px 20px;
+    background: #161616;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.process-step:hover {
+    border-color: rgba(37,99,255,0.4);
+    transform: translateY(-6px);
+}
+
+.step-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #4d8aff;
+    opacity: 0.7;
+    margin-bottom: 14px;
+}
+
+.step-icon {
+    width: 56px;
+    height: 56px;
+    background: #1a2a5e;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #4d8aff;
+    margin: 0 auto 16px;
+}
+
+.process-step h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.process-step p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    color: #888ea8;
+    line-height: 1.6;
+}
+
+.process-connector {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    padding-top: 54px;
+    color: rgba(37,99,255,0.4);
+    font-size: 18px;
+}
+
+
+/* ─────────────────────────────────────
+   TECH STACK
+───────────────────────────────────── */
+
+.techstack {
+    padding: 100px 8%;
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 28px 20px;
+    background: #161616;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    font-size: 30px;
+    color: #4d8aff;
+    transition: border-color 0.3s, transform 0.3s, color 0.3s;
+    cursor: default;
+}
+
+.tech-item:hover {
+    border-color: rgba(37,99,255,0.5);
+    transform: translateY(-4px);
+    color: #00c8ff;
+}
+
+.tech-item span {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #888ea8;
+    text-transform: uppercase;
+}
+
+
+/* ─────────────────────────────────────
+   FAQ
+───────────────────────────────────── */
+
+.faq {
+    padding: 100px 8%;
+    background: #0f0f0f;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.faq-list {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background: #161616;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+.faq-item.open {
+    border-color: rgba(37,99,255,0.4);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 24px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    gap: 16px;
+    transition: color 0.2s;
+}
+
+.faq-question i {
+    color: #4d8aff;
+    font-size: 13px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.open .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    color: #888ea8;
+    line-height: 1.7;
+    padding: 0 24px 22px;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+}
+
+
+/* ─────────────────────────────────────
+   CTA SECTION — services page only
+   dark glowing border, no solid fill
+───────────────────────────────────── */
+
+.services-cta {
+    padding: 100px 8%;
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    justify-content: center;
+}
+
+.services-cta .cta-inner {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    padding: 80px 60px;
+    text-align: center;
+    border-radius: 28px;
+    background: #111111;
+    border: 1px solid rgba(37,99,255,0.3);
+    box-shadow:
+        0 0 0 1px rgba(37,99,255,0.1),
+        0 0 80px rgba(37,99,255,0.12),
+        inset 0 0 80px rgba(37,99,255,0.04);
+    overflow: hidden;
+}
+
+/* animated top glow line */
+.services-cta .cta-inner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 10%; right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #2563ff, #00c8ff, #2563ff, transparent);
+    animation: ctaLine 3s ease-in-out infinite;
+}
+
+@keyframes ctaLine {
+    0%, 100% { opacity: 0.4; }
+    50%       { opacity: 1; }
+}
+
+/* background glow blob */
+.services-cta .cta-inner::after {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 200px;
+    background: radial-gradient(ellipse, rgba(37,99,255,0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.services-cta .cta-inner h2 {
+    position: relative;
+    z-index: 2;
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+/* highlight one word in blue */
+.services-cta .cta-inner h2 span {
+    color: #4d8aff;
+}
+
+.services-cta .cta-inner p {
+    position: relative;
+    z-index: 2;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #888ea8;
+    font-size: 16px;
+    margin-bottom: 44px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+/* two buttons side by side */
+.services-cta .cta-buttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.services-cta .btn-glow {
+    background: #2563ff;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 30px rgba(37,99,255,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.services-cta .btn-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 50px rgba(37,99,255,0.6);
+}
+
+.services-cta .btn-outline {
+    background: transparent;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    padding: 16px 36px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.services-cta .btn-outline:hover {
+    border-color: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.05);
+    transform: translateY(-3px);
+}
+
+
+/* ─────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────── */
+
+@media (max-width: 900px) {
+
+    .service-detail-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-detail-inner-rev {
+        direction: ltr;
+    }
+
+    .service-detail-visual {
+        order: -1;
+    }
+
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .process-connector {
+        transform: rotate(90deg);
+        padding: 0;
+    }
+
+    .process-step {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .services-cta .cta-inner {
+        padding: 50px 30px;
+    }
+
+}
